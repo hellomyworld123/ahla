@@ -1,0 +1,199 @@
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #FFD700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  color: #f2f2f2;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-gold {
+  background-color: #FFD700;
+  color: #000;
+}
+
+.btn-gold:hover {
+  background-color: #f2c500;
+}
+
+.btn-pink {
+  background-color: #FADADD;
+  color: #000;
+}
+
+.btn-pink:hover {
+  background-color: #f2baca;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.hero-overlay {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  color: #FFD700;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #FADADD;
+  margin: 1rem 0 2rem;
+}
+
+/* Sections */
+section {
+  padding: 5rem 1rem;
+}
+
+.about,
+.booking,
+.contact {
+  background-color: #111;
+}
+
+.services-grid,
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Service Cards */
+.service-card {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #FFD700;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+}
+
+/* Gallery */
+.gallery-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #FADADD;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Form */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+input, textarea {
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #999;
+}
+
+.footer a {
+  color: #FFD700;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .gallery-grid img {
+    height: 180px;
+  }
+}
